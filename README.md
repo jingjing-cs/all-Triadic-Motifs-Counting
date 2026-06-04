@@ -13,26 +13,20 @@ TMC is an algorithm for counting all 3-node motifs in temporal networks, while S
 1.download the project, the project looks like:
 
 ```
-多时序子图计数
-├── data-mart        # Directory of raw temporal network datasets
-├── experiment       # Experimental datasets
-├── motifs           # Triadic (3-node) motifs
-└── code             # Root directory of all algorithm source codes
-    ├── es           # Source code of ES algorithm
-    ├── es_stream    # Implementation of streaming SES algorithm
-    ├── odeN-master  # Implementation of OdeN algorithm
-    ├── snap-master  # Implementation of SNAP-based algorithm
-    ├── temporal_subgraph_is... # Implementation of BT algorithm
-    ├── TMC          # TMC algorithm implementation
-    │   ├── ews.cpp
-    │   ├── ews.exe
-    │   └── graph_ews.h
-    ├── STMC         # STMC algorithm implementation
-    │   ├── graph_es_stream.h
-    │   ├── es_stream.cpp
-    │   └── SMMC.exe
-    ├── FAST-temporal-motif-... # Implementation of FAST algorithm
-    └── ews          # Implementation of EWS algorithm
+all-Triadic-Motifs-Counting
+│
+├── README.md                    # Project documentation
+├── example.txt                  # Example input dataset
+│
+├── TMC/                         # Temporal Motif Counting algorithm
+│   ├── ews.cpp                  # Main implementation of TMC
+│   ├── graph_ews.h              # Graph data structure and utilities
+│   └── TMC.exe                  # Executable program
+│
+└── STMC/                        # Streaming Temporal Motif Counting algorithm
+    ├── es_stream.cpp            # Main implementation of STMC
+    ├── graph_es_stream.h        # Streaming graph data structure
+    └── STMC.exe                 # Executable program
 ```
 
 We only elaborate on the compilation procedures of TMC and STMC.
